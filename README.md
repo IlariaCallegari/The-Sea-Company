@@ -1,2 +1,2 @@
 # The-Sailing-Company
-Fully Responsive Website created with Flexbox
+Fully Responsive Landing Page for Startup Company created with Flexbox
