@@ -1,0 +1,34 @@
+{
+  "name": "the-sea-company",
+  "version": "1.0.0",
+  "description": "Fully responsive landing page for startup company, created with Sass, Flexbox and CSS Animations.",
+  "main": "index.html",
+  "scripts": {
+  },
+  "liveSassCompile.settings.formats":[
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlariaCallegari/The-Sailing-Company.git"
+  },
+  "keywords": [
+    "startup",
+    "landing page"
+  ],
+  "author": "Ilaria Callegari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlariaCallegari/The-Sailing-Company/issues"
+  },
+  "homepage": "https://github.com/IlariaCallegari/The-Sailing-Company#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

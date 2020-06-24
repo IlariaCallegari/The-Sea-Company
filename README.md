@@ -1,2 +1,2 @@
 # The-Sailing-Company
-Fully Responsive Landing Page for Startup Company created with Flexbox
+Fully responsive landing page for startup company, created with SASS, Flexbox and CSS Animations.
