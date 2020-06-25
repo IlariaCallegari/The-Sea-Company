@@ -1,0 +1,8 @@
+section{
+    text-align: center;
+    padding: 12.5rem 8rem;
+
+    &:nth-of-type(even) {
+        background-color: $color-primary-1;
+    }
+}

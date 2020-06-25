@@ -1,0 +1,95 @@
+.navigation {
+    position: relative;
+
+    &__checkbox {
+        display: none;
+
+        &:checked ~ &__background{
+            transform: scale(80);
+        }
+    }
+
+    &__button{
+        background-color: rgba($color-white, .7);
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        top: 5.5rem;
+        right: 4rem;
+        z-index: 5;
+    }
+
+    &__icon {
+        margin-top: 3.5rem;
+        position: relative; 
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            color: $color-tertiary-1;
+            display: inline-block;
+            z-index: 3;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0; 
+        }
+    }
+
+    &__background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-image: linear-gradient(to bottom right, 
+                            rgba($color-tertiary-1, .7), 
+                            rgba($color-tertiary-2, .7));
+        position: absolute;
+        top: 6rem;
+        right: 5.5rem;
+        z-index: 4;
+    }
+
+    &__nav {
+        @include centerAbsolute;
+        position: absolute;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__link {
+        &,
+        &:visited,
+        &:link {
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 1.5rem 3rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: $color-primary-2;
+            margin: 1rem;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 225%;
+            transition: all .4s;
+        }
+        
+        &:hover,
+        &:active {
+            background-position: 100%;
+            transform: translateX(1rem);
+            box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        }
+        
+    }
+}
