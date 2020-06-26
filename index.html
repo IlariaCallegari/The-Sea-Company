@@ -20,26 +20,25 @@
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#about-us">About Us</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#destinations">Destinations</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-
-    <div class="navigation__background">&nbsp;</div>
-
-    <nav class="navigation__nav">
-        <ul class="navigation__list">
-            <li class="navigation__item">
-                <a class="navigation__link" href="#captures">About Us</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#destinations">Destinations</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#testimonials">Testimonials</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#contact">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
 
     <header class="header">
         <div class="header__logo-box">
@@ -56,95 +55,114 @@
         </div>
     </header>
 
-    <section class="captures" id="captures">
-        <h3 class="heading-tertiary">Captures in the Sea</h3>
-        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum, ut dolor
-            dolorem provident
-            illum, mollitia reprehenderit consequuntur explicabo animi nemo molestiae quos atque vel alias beatae dolore
-            amet ullam. Ratione eum perferendis ullam earum. Itaque recusandae a eum delectus laboriosam ipsa, ea
-            tempore iure tempora earum natus eos nihil minus ut alias in nemo ex maiores aspernatur aperiam molestiae.
-        </p>
-
-        <div class="images">
-            <div class="small" id="img1" style="background-image: url(/assets/img/sea_1.jpg)"></div>
-            <div class="big" id="img2" style="background-image: url(/assets/img/sea_2.jpg)"></div>
-            <div class="big" id="img3" style="background-image: url(/assets/img/sea_3.jpg)"></div>
-            <div class="small" id="img4" style="background-image: url(/assets/img/sea_4.jpg)"></div>
-        </div>
-    </section>
-    <section class="destinations" id="destinations">
-        <h3 class="heading-tertiary">Destinations</h3>
-        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita modi ipsam
-            maiores eveniet
-            obcaecati reiciendis perferendis blanditiis est praesentium?</p>
-
-        <div class="trips">
-            <div class="packages">
-                <i class="fas fa-compass"></i>
-                <h4 class="heading-quaternary">French Polinesia</h4>
-                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sequi sint quas
-                    quibusdam necessitatibus
-                    amet facere dolorum molestiae ullam at.</p>
-                <a href="#" class="discover">Discover more</a>
+    <section class="section">
+        <div class="section__about-us" id="about-us">
+            <div class="section__about-us--description">
+                <div class="section__about-us--description-title">
+                    <h3 class="heading-tertiary">Captures in the Sea</h3>
+                </div>
+                <div class="section__about-us--description-text">
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+                        dolorum,
+                        ut dolor dolorem provident illum, mollitia reprehenderit consequuntur explicabo animi nemo
+                        molestiae quos atque vel alias beatae dolore amet ullam. Ratione eum perferendis ullam earum.
+                        Itaque recusandae a eum delectus laboriosam ipsa, ea tempore iure tempora earum natus eos nihil
+                        minus ut alias in nemo ex maiores aspernatur aperiam molestiae.
+                    </p>
+                </div>
             </div>
-            <div class="packages">
-                <i class="fas fa-mountain"></i>
-                <h4 class="heading-quaternary">Patagonia</h4>
-                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo illum eius
-                    fugit impedit
-                    recusandae amet ea similique sequi sit corrupti?</p>
-                <a href="#" class="discover">Discover more</a>
-            </div>
-            <div class="packages">
-                <i class="fas fa-water"></i>
-                <h4 class="heading-quaternary">Caribbeans</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum veritatis culpa autem minima nihil
-                    ipsum? Sed repudiandae odit placeat fugiat.</p>
-                <a href="#" class="discover">Discover more</a>
-            </div>
-            <div class="packages">
-                <i class="fas fa-sun"></i>
-                <h4 class="heading-quaternary">Madagascar</h4>
-                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nam
-                    perferendis natus ex
-                    neque ab cupiditate ut, perspiciatis est eos?</p>
-                <a href="#" class="discover">Discover more</a>
+            <div class="section__about-us--images">
+                <img src="assets/img/sea_1.jpg" class="section__about-us--images-small">
+                <img src="assets/img/sea_2.jpg" class="section__about-us--images-big" >
+                <img src="assets/img/sea_3.jpg" class="section__about-us--images-big">
+                <img src="assets/img/sea_4.jpg" class="section__about-us--images-small">
             </div>
         </div>
     </section>
-    <section class="testimonials" id="testimonials">
-        <h3 class="heading-tertiary">Testimonials From Our Adventurers</h3>
-        <p class="paragraph"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in illum ipsam maiores
-                enim vero
-                perspiciatis voluptatum dolorum non vitae!</q><br> -
-            The Great Explorer</p>
-        <p class="paragraph"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, sunt quibusdam nemo eveniet,
-                laborum nulla
-                architecto pariatur, aliquid doloremque ad mollitia eius placeat! Ut, nam voluptas quibusdam dicta ea
-                iste.</q><br> - Incredible Person</p>
-        <p class="paragraph"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ullam sunt facilis
-                dolores recusandae
-                nisi vero veniam beatae esse, ab pariatur sequi illo odio aspernatur!</q><br> - Indiana Jones</p>
-    </section>
-    <section class="contact" id="contact">
-        <h3 class="heading-tertiary">Contact Us</h3>
-        <p class="paragraph">Want to know about our upcoming sailing events? Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Ut
-            tempore ex magnam necessitatibus facilis? Ipsum blanditiis error corrupti eos tempore natus beatae
-            excepturi, minus maiores rem aut dicta! Sunt, quae.</p>
 
-        <form action="#" method="POST">
-            <label for="firstName">First Name:</label>
-            <input type="text" placeholder="First Name" id="firstName" required>
-            <label for="secondName">Second Name:</label>
-            <input type="text" placeholder="Second Name" id="secondName" required>
-            <label for="email">Email:</label>
-            <input type="email" placeholder="Email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" cols="30" rows="10" required>Write here your enquiry</textarea>
-            <button>Contact Us Now</button>
-        </form>
+    <section class="section">
+        <div class="section__destinations" id="destinations">
+            <h3 class="heading-tertiary">Destinations</h3>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita modi ipsam
+                maiores eveniet
+                obcaecati reiciendis perferendis blanditiis est praesentium?</p>
+
+            <div class="trips">
+                <div class="packages">
+                    <i class="fas fa-compass"></i>
+                    <h4 class="heading-quaternary">French Polinesia</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sequi sint quas
+                        quibusdam necessitatibus
+                        amet facere dolorum molestiae ullam at.</p>
+                    <a href="#" class="discover">Discover more</a>
+                </div>
+                <div class="packages">
+                    <i class="fas fa-mountain"></i>
+                    <h4 class="heading-quaternary">Patagonia</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo illum eius
+                        fugit impedit
+                        recusandae amet ea similique sequi sit corrupti?</p>
+                    <a href="#" class="discover">Discover more</a>
+                </div>
+                <div class="packages">
+                    <i class="fas fa-water"></i>
+                    <h4 class="heading-quaternary">Caribbeans</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum veritatis culpa autem minima nihil
+                        ipsum? Sed repudiandae odit placeat fugiat.</p>
+                    <a href="#" class="discover">Discover more</a>
+                </div>
+                <div class="packages">
+                    <i class="fas fa-sun"></i>
+                    <h4 class="heading-quaternary">Madagascar</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nam
+                        perferendis natus ex
+                        neque ab cupiditate ut, perspiciatis est eos?</p>
+                    <a href="#" class="discover">Discover more</a>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+    <section class="section">
+        <div class="section__testimonials" id="testimonials">
+            <h3 class="heading-tertiary">Testimonials From Our Adventurers</h3>
+            <p class="paragraph"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in illum ipsam maiores
+                    enim vero
+                    perspiciatis voluptatum dolorum non vitae!</q><br> -
+                The Great Explorer</p>
+            <p class="paragraph"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, sunt quibusdam nemo eveniet,
+                    laborum nulla
+                    architecto pariatur, aliquid doloremque ad mollitia eius placeat! Ut, nam voluptas quibusdam dicta ea
+                    iste.</q><br> - Incredible Person</p>
+            <p class="paragraph"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ullam sunt facilis
+                    dolores recusandae
+                    nisi vero veniam beatae esse, ab pariatur sequi illo odio aspernatur!</q><br> - Indiana Jones</p>
+            </div>
+    </section>
+
+    <section class="section">
+        <div class="contact" id="contact">
+            <h3 class="heading-tertiary">Contact Us</h3>
+            <p class="paragraph">Want to know about our upcoming sailing events? Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Ut
+                tempore ex magnam necessitatibus facilis? Ipsum blanditiis error corrupti eos tempore natus beatae
+                excepturi, minus maiores rem aut dicta! Sunt, quae.</p>
+    
+            <form action="#" method="POST">
+                <label for="firstName">First Name:</label>
+                <input type="text" placeholder="First Name" id="firstName" required>
+                <label for="secondName">Second Name:</label>
+                <input type="text" placeholder="Second Name" id="secondName" required>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" cols="30" rows="10" required>Write here your enquiry</textarea>
+                <button>Contact Us Now</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <p class="paragraph">image courtesy to <strong>unsplash</strong>.<br> why are you even reading this?! there's
             never anything
@@ -153,7 +171,6 @@
         <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a href="https://pinterest.com/" target="_blank"><i class="fab fa-pinterest-square"></i></a>
     </footer>
-    <script src="/assets/script.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,8 @@
 .header {
     height: 100vh;
     background-image:   linear-gradient(to bottom right, 
-                        rgba($color-tertiary-1, .7), 
-                        rgba($color-tertiary-2, .7)), 
+                        rgba($color-tertiary-2, .8), 
+                        rgba($color-tertiary-1, .8)), 
                         url(/assets/img/sea-main.jpg);
     background-position: top;
     background-size: cover;
@@ -22,5 +22,6 @@
         @include centerAbsolute;
         color: $color-white; 
         opacity: 1;
+        text-align: center;
     }
 }

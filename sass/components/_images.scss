@@ -1,0 +1,38 @@
+.section__about-us--images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & img {
+        height: 35rem;
+        background-position: center;
+        background-size: 100%;
+        background-clip: content-box;
+        padding: 2rem;
+        box-shadow: 1rem 1rem 4rem rgba($color-black, 0.2);
+        margin: 0 2rem 4rem 0;
+        border-radius: 4px;
+    }
+
+    &-small {
+        flex-basis: 38%;
+        transition: all .4s;
+        
+        &:hover {
+            @include imageOnFocus;
+        }
+    }
+
+    &-big {
+        flex-basis: 58%;
+        transition: all .4s;
+    
+        &:hover {
+            @include imageOnFocus;
+        }
+    }
+} 
+
+
+

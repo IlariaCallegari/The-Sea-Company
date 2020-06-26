@@ -11,6 +11,7 @@
 @import "components/button";
 @import "components/form";
 @import "components/popup";
+@import "components/images";
 
 @import "layout/footer";
 @import "layout/header";
@@ -97,37 +98,11 @@ footer i {
 
 /* || Sections styles */
 
-.captures, .destinations {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
 
 .contact {
     padding-bottom: 80px; 
 }
 
-.images{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
-}
-.images div {
-    background-position: center;
-    background-size: cover;
-    background-clip: content-box;
-    padding: 20px;
-    height: 350px;
-}
-
-.small {
-    flex-basis: 40%;
-}
-
-.big {
-    flex-basis: 60%;
-}
 
 .fas{
     transition: 0.5s;

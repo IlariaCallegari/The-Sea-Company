@@ -1,27 +1,36 @@
 .heading-primary{
-    font-size: 6.2rem;
+    font-size: 9rem;
     letter-spacing: .5rem;
     font-family: 'Cinzel', serif;
+    text-shadow: 0 3rem 4rem rgba($color-black, 0.5);
 }
 
 .heading-secondary {
-    font-size: 2.7rem; ;
+    font-size: 4rem; ;
     font-family: 'Cinzel', serif;
     letter-spacing: .3rem;
+    font-weight: 400;
+    text-shadow: 0 2rem 3rem rgba($color-black, 0.5);
 }
 
 .heading-tertiary {
-    font-size: 2rem;
+    font-size: 5rem;
     font-family: 'Cinzel', serif;
-    color: $color-secondary-1;
-    margin-bottom: 3.5rem;
+    letter-spacing: .4rem;
+    background-image: linear-gradient(to bottom right,$color-tertiary-1, $color-tertiary-2);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 5rem;
+    text-shadow: 0 2rem 3rem rgba($color-black, 0.4);
 }
 
 .heading-quaternary {
-    font-size: 1.35rem;
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
 }
 
 .paragraph {
+    font-size: 1.5rem;
     padding: 3.5rem 2rem 1.5rem;
     display: block;
     line-height: 3rem;

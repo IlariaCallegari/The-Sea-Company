@@ -1,8 +1,19 @@
-section{
+.section {
     text-align: center;
-    padding: 12.5rem 8rem;
+    padding: 12.5rem 20rem;
+    position: relative;
 
     &:nth-of-type(even) {
         background-color: $color-primary-1;
     }
+
+    &__about-us--description-text {
+        & .paragraph {
+            line-height: 3rem;
+            margin-bottom: 5rem;
+        }
+    }
 }
+
+
+
