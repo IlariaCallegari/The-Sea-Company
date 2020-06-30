@@ -168,19 +168,32 @@ ul {
 
 .heading-tertiary {
   font-size: 5rem;
-  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
   letter-spacing: .4rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#373B44), to(#4286f4));
-  background-image: linear-gradient(to bottom right, #373B44, #4286f4);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#c1d0db), to(#2b5876));
+  background-image: linear-gradient(to bottom right, #c1d0db, #2b5876);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-text-stroke: 1px #414A4f;
   margin-bottom: 5rem;
-  text-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
 }
 
 .heading-quaternary {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: #eee;
   letter-spacing: .3rem;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  overflow-wrap: break-word;
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  padding: 1.5rem 2rem;
+  background-color: rgba(193, 208, 219, 0.9);
 }
 
 .paragraph {
@@ -192,6 +205,41 @@ ul {
 
 .u-margin-bottom-small {
   margin-bottom: 2rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 50rem;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  font-size: 1.7rem;
+}
+
+.btn:link, .btn:visited {
+  color: #eee;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+.btn:active {
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+}
+
+.btn-discover:link, .btn-discover:visited {
+  padding: 1rem 2.5rem;
+  background-color: #2b5876;
 }
 
 .section__about-us--images {
@@ -228,10 +276,9 @@ ul {
 .section__about-us--images-small:hover {
   -webkit-transform: scale(1.1) translateY(-1.5rem);
           transform: scale(1.1) translateY(-1.5rem);
-  outline: 1rem solid #2b5876;
-  outline-offset: 1rem;
   -webkit-box-shadow: 1.5rem 1.5rem 4.5rem rgba(0, 0, 0, 0.2);
           box-shadow: 1.5rem 1.5rem 4.5rem rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .section__about-us--images-big {
@@ -244,10 +291,67 @@ ul {
 .section__about-us--images-big:hover {
   -webkit-transform: scale(1.1) translateY(-1.5rem);
           transform: scale(1.1) translateY(-1.5rem);
-  outline: 1rem solid #2b5876;
-  outline-offset: 1rem;
   -webkit-box-shadow: 1.5rem 1.5rem 4.5rem rgba(0, 0, 0, 0.2);
           box-shadow: 1.5rem 1.5rem 4.5rem rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.packages__card--title {
+  height: 30rem;
+  position: relative;
+}
+
+.packages__card--title figure {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.packages__card--title-1 {
+  background-image: url(/assets/img/polynesia.jpg);
+}
+
+.packages__card--title-2 {
+  background-image: url(/assets/img/patagonia.jpg);
+}
+
+.packages__card--title-3 {
+  background-image: url(/assets/img/caribbean.jpg);
+}
+
+.packages__card--title-4 {
+  background-image: url(/assets/img/madagascar.jpg);
+}
+
+.packages__card--details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.2rem;
+  font-weight: 300;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.packages__card--details-price {
+  border: 1px solid #414A4f;
+  padding: 2rem 5rem;
+  width: 50%;
+}
+
+.packages__card--details-group {
+  border: 1px solid #414A4f;
+  padding: 2rem 5rem;
+  width: 50%;
 }
 
 .header {
@@ -437,10 +541,34 @@ ul {
   margin-bottom: 5rem;
 }
 
-i {
-  font-size: 2.5rem;
-  padding-bottom: 2rem;
-  color: #2b5876;
+.section__trips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__trips--packages {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 2rem 2rem 5rem 2rem;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0 5rem 5rem 5rem;
+  background-color: #eee;
+  -webkit-box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.section__trips--packages:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 form {
@@ -484,40 +612,5 @@ footer i {
 /* || Sections styles */
 .contact {
   padding-bottom: 80px;
-}
-
-.fas {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.fas:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
-.trips {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.packages {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding: 5rem 5rem 0 5rem;
-  text-align: center;
-}
-
-.discover {
-  color: #2b5876;
-  font-size: small;
-}
-
-#img1:hover, #img2:hover, #img3:hover, #img4:hover {
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
 }
 /*# sourceMappingURL=main.css.map */

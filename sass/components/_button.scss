@@ -1,0 +1,32 @@
+.btn {
+    display: inline-block;
+    border-radius: 50rem;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
+    font-size: 1.7rem;
+
+    &:link,
+    &:visited {
+        color: $color-white;
+    }
+
+    &:hover {
+        box-shadow: 0 1.5rem 3.5rem rgba($color-black, 0.5);
+        transform: translateY(-.3rem);   
+    }
+
+    &:active {
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
+        transform: translateY(-.1rem);    
+    }
+}
+
+.btn-discover {
+    &:link,
+    &:visited{
+       padding: 1rem 2.5rem;
+       background-color: $color-primary-2;
+    }
+}
+
+
+   
