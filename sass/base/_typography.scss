@@ -1,13 +1,11 @@
 .heading-primary{
     font-size: 9rem;
     letter-spacing: .5rem;
-    font-family: 'Cinzel', serif;
     text-shadow: 0 3rem 4rem rgba($color-black, 0.5);
 }
 
 .heading-secondary {
     font-size: 4rem; ;
-    font-family: 'Cinzel', serif;
     letter-spacing: .3rem;
     font-weight: 400;
     text-shadow: 0 2rem 3rem rgba($color-black, 0.5);
@@ -44,8 +42,40 @@
 
 .paragraph {
     font-size: 1.5rem;
-    padding: 3.5rem 2rem 1.5rem;
+    padding: 1.5rem 2rem 1.5rem;
     display: block;
     line-height: 3rem;
 }
 
+.icons {
+    font-size: 3.5rem;
+    background-image: linear-gradient($color-primary-1, $color-primary-2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px $color-secondary-1;
+
+    &-card {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.close-popup {
+    &:link,
+    &:visited {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    color: $color-primary-1;
+    font-weight: 900;
+    display: inline-block;
+    }
+
+    &:hover {
+        color: $color-primary-2;
+    }
+}

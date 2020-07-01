@@ -1,0 +1,36 @@
+.popup__inner {
+    @include centerAbsolute;
+    height: 60%;
+    width: 60%;
+    background-color: $color-white;
+    border-radius: 4px;
+
+    &--picture {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(95deg, $color-white 0%, $color-white 50%, transparent 50%), url(/assets/img/sea_3.jpg);
+        background-position: center;
+        background-size: 100%;
+        position: relative;
+    }
+
+    &--text {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 1%;
+    }
+
+    &--info {
+        width: 40%;
+        top: 30%;
+        left: 6%;
+        position: relative;
+
+        &-terms {
+            letter-spacing: 2px;
+            font-weight: 900;
+            color: $color-tertiary-1;
+        }
+    }
+}

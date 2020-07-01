@@ -154,13 +154,11 @@ ul {
 .heading-primary {
   font-size: 9rem;
   letter-spacing: .5rem;
-  font-family: 'Cinzel', serif;
   text-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.5);
 }
 
 .heading-secondary {
   font-size: 4rem;
-  font-family: 'Cinzel', serif;
   letter-spacing: .3rem;
   font-weight: 400;
   text-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
@@ -198,17 +196,69 @@ ul {
 
 .paragraph {
   font-size: 1.5rem;
-  padding: 3.5rem 2rem 1.5rem;
+  padding: 1.5rem 2rem 1.5rem;
   display: block;
   line-height: 3rem;
+}
+
+.icons {
+  font-size: 3.5rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1d0db), to(#2b5876));
+  background-image: linear-gradient(#c1d0db, #2b5876);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px #414A4f;
+}
+
+.icons-card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.close-popup:link, .close-popup:visited {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  color: #c1d0db;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.close-popup:hover {
+  color: #2b5876;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 3rem;
+}
+
+.u-margin-top-big {
+  margin-top: 4rem;
 }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem;
 }
 
+.u-margin-bottom-medium {
+  margin-bottom: 3rem;
+}
+
 .u-margin-bottom-big {
   margin-bottom: 4rem;
+}
+
+.general-padding {
+  padding: 12.5rem 20rem;
 }
 
 .btn {
@@ -238,8 +288,69 @@ ul {
 }
 
 .btn-discover:link, .btn-discover:visited {
-  padding: 1rem 2.5rem;
+  margin: 0 auto;
+  width: 60%;
+  padding: 1rem 3rem;
   background-color: #2b5876;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-book:link, .btn-book:visited {
+  margin: 0 auto;
+  width: 60%;
+  padding: 1rem 3rem;
+  background-color: #2b5876;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+
+.popup__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 60%;
+  width: 60%;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.popup__inner--picture {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(/assets/img/sea_3.jpg);
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+}
+
+.popup__inner--text {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 1%;
+}
+
+.popup__inner--info {
+  width: 40%;
+  top: 30%;
+  left: 6%;
+  position: relative;
+}
+
+.popup__inner--info-terms {
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #373B44;
 }
 
 .section__about-us--images {
@@ -334,24 +445,66 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2.2rem;
   font-weight: 300;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 3rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .packages__card--details-price {
-  border: 1px solid #414A4f;
   padding: 2rem 5rem;
-  width: 50%;
+  width: 45%;
+  background-color: rgba(193, 208, 219, 0.7);
+  border-radius: 2rem;
+  position: relative;
 }
 
 .packages__card--details-group {
-  border: 1px solid #414A4f;
   padding: 2rem 5rem;
+  width: 45%;
+  background-color: rgba(193, 208, 219, 0.7);
+  border-radius: 2rem;
+  position: relative;
+}
+
+.popup__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 60%;
+  width: 60%;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.popup__inner--picture {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(/assets/img/sea_3.jpg);
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+}
+
+.popup__inner--text {
   width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 1%;
+}
+
+.popup__inner--info {
+  width: 40%;
+  top: 30%;
+  left: 6%;
+  position: relative;
+}
+
+.popup__inner--info-terms {
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #373B44;
 }
 
 .header {
@@ -528,12 +681,16 @@ ul {
 
 .section {
   text-align: center;
-  padding: 12.5rem 20rem;
   position: relative;
 }
 
 .section:nth-of-type(even) {
   background-color: #c1d0db;
+}
+
+.section__about-us {
+  width: inherit;
+  height: inherit;
 }
 
 .section__about-us--description-text .paragraph {
@@ -550,6 +707,8 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: inherit;
+  height: inherit;
 }
 
 .section__trips--packages {
@@ -567,8 +726,32 @@ ul {
 }
 
 .section__trips--packages:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(0.97, 0.97) translateY(1.5rem);
+          transform: scale(0.97, 0.97) translateY(1.5rem);
+  -webkit-box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.5);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.section__popup {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(66, 134, 244, 0.8)), to(rgba(55, 59, 68, 0.8)));
+  background-image: linear-gradient(to bottom right, rgba(66, 134, 244, 0.8), rgba(55, 59, 68, 0.8));
+  position: fixed;
+  z-index: 30;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.section__popup:target {
+  visibility: visible;
+  opacity: 1;
 }
 
 form {

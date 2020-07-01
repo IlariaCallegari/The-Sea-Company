@@ -23,8 +23,19 @@
 .btn-discover {
     &:link,
     &:visited{
-       padding: 1rem 2.5rem;
-       background-color: $color-primary-2;
+        @include button;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.btn-book {
+    &:link,
+    &:visited {
+        @include button;
+        text-transform: uppercase;
+        margin-top: 5rem;
     }
 }
 

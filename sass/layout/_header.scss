@@ -1,9 +1,6 @@
 .header {
     height: 100vh;
-    background-image:   linear-gradient(to bottom right, 
-                        rgba($color-tertiary-2, .8), 
-                        rgba($color-tertiary-1, .8)), 
-                        url(/assets/img/sea-main.jpg);
+    background-image: $linear-gradient-tertiaries, url(/assets/img/sea-main.jpg);
     background-position: top;
     background-size: cover;
     position: relative;
