@@ -525,69 +525,76 @@ ul {
   color: #373B44;
 }
 
-.carousel {
-  position: relative;
-  height: 100%;
-}
-
 .carousel__activator {
   display: none;
 }
 
 .carousel__slide {
-  position: relative;
+  margin: 0 auto;
+  width: 50rem;
+  height: 50rem;
   display: none;
   background-color: rgba(193, 208, 219, 0.8);
-  width: 50%;
-  margin: 5rem auto;
-  border-radius: .4rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
+          box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 3rem;
 }
 
-.carousel__slide--picture {
-  position: absolute;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+.carousel__slide--picture figure {
+  position: relative;
 }
 
 .carousel__slide--picture figure img {
   height: 15rem;
   width: 15rem;
   border-radius: 100%;
-  -webkit-box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
-.carousel__slide--picture-figcaption {
-  font-size: 2rem;
-  font-weight: 900;
+.carousel__slide--picture figure figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
   text-transform: uppercase;
-  color: #373B44;
+  color: #eee;
+  letter-spacing: .2rem;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
-.carousel__slide--picture-figcaption span {
+.carousel__slide--picture figure figcaption span {
   display: block;
 }
 
 .carousel__slide--text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
+  font-weight: 400;
 }
 
-.carousel__indicators {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0%;
+.carousel__slide:hover .carousel__slide--picture figure img {
+  -webkit-filter: blur(0.2rem) brightness(0.85);
+          filter: blur(0.2rem) brightness(0.85);
+  -webkit-transform: scale(0.95) translateY(-0.5rem);
+          transform: scale(0.95) translateY(-0.5rem);
 }
 
-.carousel__indicator {
+.carousel__slide:hover .carousel__slide--picture figcaption {
+  -webkit-transform: translateY(-3.5rem);
+          transform: translateY(-3.5rem);
+  opacity: 1;
+}
+
+.carousel__indicators .carousel__indicator {
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
@@ -599,7 +606,7 @@ ul {
   background-color: #373B44;
 }
 
-.carousel__indicator:hover {
+.carousel__indicators .carousel__indicator:hover {
   opacity: 1;
 }
 
@@ -928,10 +935,6 @@ ul {
           box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.5);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-}
-
-.section__testimonials--carousel {
-  height: 50vh;
 }
 
 .section__popup {

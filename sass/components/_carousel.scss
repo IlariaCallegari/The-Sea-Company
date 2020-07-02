@@ -1,98 +1,89 @@
 .carousel{
-    position: relative;
-    height: 100%;
 
     &__activator {
         display: none;
     }
 
-    // &__control {
-    //     height: 3rem;
-    //     width: 3rem;
-    //     cursor: pointer;
-    //     border-width: 5px 5px 0 0;
-    //     border-style: solid;
-    //     border-color: $color-tertiary-1;
-    //     opacity: .5;
-    //     z-index: 6;
-    //     display: block;
-    //     position: absolute;
-    //     top: 50%;
-        
-    //     &--forward {
-    //         transform: rotate(45deg);
-    //         left: 100%;
-    //     }
-
-    //     &--backward {
-    //         transform: rotate(225deg);
-    //         right: 100%;
-    //     }
-    // }
-
     &__slide {
-        position: relative;
+        margin: 0 auto;
+        width: 50rem;
+        height: 50rem;
         display: none;
         background-color: rgba($color-primary-1, .8);
-        width: 50%;
-        margin: 5rem auto;
-        border-radius: .4rem;
-        @include centerAbsolute;
+        box-shadow: 1rem 1rem 3rem rgba($color-black, .4);
+        border-radius: 50%;
+        padding: 3rem;
 
         &--picture {
-            position: absolute;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
+            & figure {
+                position: relative;
 
-            & figure img {
-                height: 15rem;
-                width: 15rem;
-                border-radius: 100%;
-                box-shadow: 0 1.5rem 2rem rgba($color-black, .5);      
-            }
+                & img {
+                    height: 15rem;
+                    width: 15rem;
+                    border-radius: 100%;
+                    box-shadow: .5rem .5rem 2rem rgba($color-black, .3);
+                    transition: all .5s ease-in;       
+                }
 
-            &-figcaption {
-                font-size: 2rem;
-                font-weight: 900;
-                text-transform: uppercase;
-                color: $color-tertiary-1;
+                & figcaption {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: $color-white;
+                    letter-spacing: .2rem;
+                    opacity: 0;
+                    transition: all .5s ease-in;
+                    
+                    & span {
+                        display: block;
+                    }
 
-                & span {
-                    display: block;
                 }
             }
-        }
+
+        } 
 
         &--text {
-            font-size: 1.5rem;
+            font-size: 2rem;
             text-transform: uppercase;
             letter-spacing: .2rem;
+            font-weight: 400;
+        }  
+        
+        &:hover .carousel__slide--picture figure img {
+            filter: blur(.2rem) brightness(0.85);
+            transform: scale(.95) translateY(-.5rem);
         }
+
+        &:hover .carousel__slide--picture figcaption {
+            transform: translateY(-3.5rem);
+            opacity: 1;
+        }
+
     }
 
     &__indicators {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0%;
-    }
-
-    &__indicator {
-        height: 2rem;
-        width: 2rem;
-        border-radius: 100%;
-        display: inline-block;
-        z-index: 2;
-        cursor: pointer;
-        opacity: 0.5;
-        margin: 0 .25rem 0 .25rem;
-        background-color: $color-tertiary-1;
-    
-        &:hover {
-            opacity: 1;
+        & .carousel__indicator {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 100%;
+            display: inline-block;
+            z-index: 2;
+            cursor: pointer;
+            opacity: 0.5;
+            margin: 0 .25rem 0 .25rem;
+            background-color: $color-tertiary-1;
+        
+            &:hover {
+                opacity: 1;
+            }
         }
-    }
+    } 
 }
 
 @for $i from 1 through $slides {
@@ -107,6 +98,3 @@
        opacity: 1;
     }
 }
-
-
-
