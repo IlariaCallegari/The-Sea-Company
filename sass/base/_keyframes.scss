@@ -1,7 +1,17 @@
 @keyframes appear {
     0% {
-        transform: translate(0, -10rem); 
+        transform: translate(-10%, -10%); 
     }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slides {
+    0% {
+        opacity: 0;
+    }
+
     100% {
         opacity: 1;
     }

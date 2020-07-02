@@ -43,6 +43,13 @@
         }
     }
 
+    &__testimonials {
+
+        &--carousel {
+           height: 50vh;
+        }
+    }
+
     &__popup {
         background-image: $linear-gradient-tertiaries;
         position: fixed;
