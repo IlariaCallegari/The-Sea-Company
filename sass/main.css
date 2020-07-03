@@ -183,17 +183,17 @@ ul {
 }
 
 .heading-tertiary {
-  font-size: 5rem;
+  font-size: 5.5rem;
   text-transform: uppercase;
-  letter-spacing: .4rem;
+  letter-spacing: .5rem;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#c1d0db), to(#2b5876));
   background-image: linear-gradient(to bottom right, #c1d0db, #2b5876);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px #414A4f;
   margin-bottom: 5rem;
   text-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+  font-weight: 700;
 }
 
 .heading-quaternary {
@@ -202,14 +202,29 @@ ul {
   letter-spacing: .3rem;
   text-transform: uppercase;
   position: absolute;
-  bottom: 0;
-  right: 0%;
-  overflow-wrap: break-word;
+  right: 0;
   display: inline-block;
   width: 50%;
   text-align: right;
   padding: 1.5rem 2rem;
   background-color: rgba(193, 208, 219, 0.9);
+  bottom: 0;
+  overflow-wrap: break-word;
+}
+
+.heading-quaternary-2 {
+  font-size: 3rem;
+  color: #eee;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  padding: 1.5rem 2rem;
+  background-color: rgba(193, 208, 219, 0.9);
+  top: 0;
 }
 
 .paragraph {
@@ -285,6 +300,8 @@ ul {
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
   font-size: 1.7rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .btn:link, .btn:visited {
@@ -330,6 +347,42 @@ ul {
   margin-top: 5rem;
 }
 
+.btn-contact {
+  margin: 0 auto;
+  width: 60%;
+  padding: 1rem 3rem;
+  background-color: #2b5876;
+  text-transform: uppercase;
+  color: #eee;
+  opacity: 0.75;
+  border: 0;
+}
+
+.btn-contact:hover {
+  opacity: 1;
+}
+
+.contact__form {
+  -webkit-box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.5);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(66, 134, 244, 0.8)), to(rgba(55, 59, 68, 0.8))), url(/assets/img/getintouch.jpg);
+  background-image: linear-gradient(to bottom right, rgba(66, 134, 244, 0.8), rgba(55, 59, 68, 0.8)), url(/assets/img/getintouch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: .5rem;
+  width: 45%;
+  margin: 0 auto;
+  padding: 5rem;
+  text-align: left;
+  position: relative;
+}
+
+.contact__form--input {
+  font-family: inherit;
+  padding: 2rem 3rem;
+}
+
 .popup__inner {
   position: absolute;
   top: 50%;
@@ -339,7 +392,8 @@ ul {
   height: 60%;
   width: 60%;
   background-color: #eee;
-  border-radius: 4px;
+  border-radius: .5rem;
+  overflow: hidden;
 }
 
 .popup__inner--picture {
@@ -437,7 +491,7 @@ ul {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 4px;
+  border-radius: .5rem;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   overflow: hidden;
@@ -493,7 +547,8 @@ ul {
   height: 60%;
   width: 60%;
   background-color: #eee;
-  border-radius: 4px;
+  border-radius: .5rem;
+  overflow: hidden;
 }
 
 .popup__inner--picture {
@@ -708,6 +763,23 @@ ul {
 
 .carousel__activator:nth-of-type(10):checked ~ .carousel__indicator:nth-of-type(10) {
   opacity: 1;
+}
+
+footer {
+  text-align: center;
+  background-color: #414A4f;
+  color: #eee;
+  text-transform: uppercase;
+}
+
+footer p {
+  padding-top: 5rem;
+  margin: 0;
+}
+
+footer i {
+  color: #eee;
+  padding-left: 1rem;
 }
 
 .header {
@@ -955,48 +1027,5 @@ ul {
 .section__popup:target {
   visibility: visible;
   opacity: 1;
-}
-
-form {
-  width: 80%;
-  margin: 0 auto;
-}
-
-button {
-  background-color: #2b5876;
-  border-radius: .4rem;
-  text-transform: uppercase;
-  padding: 1rem 3rem;
-  font-size: 1.15rem;
-  font-weight: bold;
-  opacity: 0.75;
-  border: 0;
-  color: #eee;
-}
-
-button:hover {
-  opacity: 1;
-}
-
-footer {
-  text-align: center;
-  background-color: #414A4f;
-  color: #eee;
-  text-transform: uppercase;
-}
-
-footer p {
-  padding-top: 5rem;
-  margin: 0;
-}
-
-footer i {
-  color: #eee;
-  padding-left: 1rem;
-}
-
-/* || Sections styles */
-.contact {
-  padding-bottom: 80px;
 }
 /*# sourceMappingURL=main.css.map */

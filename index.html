@@ -230,7 +230,7 @@
                                 <figcaption><span>Lara</span> <span>Croft</span>
                                 </figcaption>
                             </figure>
-                            
+
                         </div>
                         <div class="carousel__slide--text u-margin-top-big">
                             <p class="paragraph"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -246,12 +246,11 @@
                     <li class="carousel__slide">
                         <div class="carousel__slide--picture">
                             <figure>
-                                <img src="/assets/img/testimonials-2.jpg"
-                                    alt="group of people on a sailng boat">
-                                    <figcaption>
-                                        <span>Captain</span><span>Hook</span></figcaption>
+                                <img src="/assets/img/testimonials-2.jpg" alt="group of people on a sailng boat">
+                                <figcaption>
+                                    <span>Captain</span><span>Hook</span></figcaption>
                             </figure>
-                            
+
                         </div>
 
                         <div class="carousel__slide--text u-margin-top-big">
@@ -298,24 +297,42 @@
 
     <!-- CONTACT -->
     <section class="section general-padding">
-        <div class="contact" id="contact">
-            <h3 class="heading-tertiary">Contact Us</h3>
-            <p class="paragraph">Want to know about our upcoming sailing events? Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Ut
-                tempore ex magnam necessitatibus facilis? Ipsum blanditiis error corrupti eos tempore natus beatae
-                excepturi, minus maiores rem aut dicta! Sunt, quae.</p>
+        <!-- <div class="contact" id="contact">
 
-            <form action="#" method="POST">
-                <label for="firstName">First Name:</label>
-                <input type="text" placeholder="First Name" id="firstName" required>
-                <label for="secondName">Second Name:</label>
-                <input type="text" placeholder="Second Name" id="secondName" required>
-                <label for="email">Email:</label>
-                <input type="email" placeholder="Email" id="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" cols="30" rows="10" required>Write here your enquiry</textarea>
-                <button class="btn">Contact Us Now</button>
-            </form>
+            <div class="contact__description">
+                <h3 class="heading-tertiary">Contact Us</h3>
+                <p class="paragraph">Want to know about our upcoming sailing events?</p>
+                <p class="paragraph">
+                    Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Ut
+                    tempore ex magnam necessitatibus facilis? Ipsum blanditiis error corrupti eos tempore natus beatae
+                    excepturi, minus maiores rem aut dicta! Sunt, quae.
+                </p>
+            </div> -->
+
+            <div class="contact__form">
+                <h4 class="heading-quaternary-2">Get in touch</h4>
+                <form action="#" method="POST">
+                    <div>
+                        <label class="contact__form--label-first-name" for="first-name">First Name</label>
+                        <input class="contact__form--input-first-name" type="text"
+                            id="first-name" required>
+                        <label class="contact__form--label-second-name" for="second-name">Second Name</label>
+                        <input class="contact__form--input-second-name" type="text"
+                            id="second-name" required>
+                    </div>
+                    <div><label class="contact__form--label-email" for="email">Email</label>
+                        <input class="contact__form--input-email" type="email" id="email" required>
+                    </div>
+
+                    <div> <label class="contact__form--label-message" for="message">Message</label>
+                        <textarea class="contact__form--input-message" id="message" cols="30" rows="10"
+                            required></textarea></div>
+
+                    <button class="btn btn-contact u-margin-top-big">Send your message </button>
+                </form>
+            </div>
+
         </div>
     </section>
 

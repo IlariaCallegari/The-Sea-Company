@@ -1,0 +1,53 @@
+.contact__form {
+    box-shadow: 1rem 1rem 3rem rgba($color-black, .5);
+    background-image: $linear-gradient-tertiaries, url(/assets/img/getintouch.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+    width: 45%;
+    margin: 0 auto;
+    padding: 5rem;
+    text-align: left;
+    position: relative;
+
+    &--input {
+        font-family: inherit;
+        padding: 2rem 3rem;
+    }
+}
+
+
+// label, input, textarea {
+//     display: inline-block;
+//     font-family: inherit;
+// }
+
+// label {
+//     width: 30%;
+//     text-align: right;
+//}
+
+// input {
+//     width: 50%;
+//     margin: 1.5% 10% 1.5% 4%;
+//     height: 3.5rem;
+//     vertical-align: middle;
+//     font-size: 1rem;
+// }
+
+// textarea {
+//     width: 50%;
+//     margin: 1% 10% 1% 4%;;
+//     vertical-align: middle;
+//     font-size: 1rem;
+// }
+
+// input:focus, button, textarea:focus {
+//     outline: none;
+//     border: .2rem solid $color-primary-2;
+// }
+
+
+
+

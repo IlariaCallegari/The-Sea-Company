@@ -30,3 +30,18 @@
     padding: 1rem 3rem; 
     background-color: $color-primary-2;
 }
+
+@mixin headingQuaternary {
+    font-size: 3rem;
+    color: $color-white;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    padding: 1.5rem 2rem;
+    background-color: rgba($color-primary-1, 0.9);
+
+}

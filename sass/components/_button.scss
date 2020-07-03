@@ -3,6 +3,7 @@
     border-radius: 50rem;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
     font-size: 1.7rem;
+    transition: all .4s;
 
     &:link,
     &:visited {
@@ -36,6 +37,18 @@
         @include button;
         text-transform: uppercase;
         margin-top: 5rem;
+    }
+}
+
+.btn-contact {
+    @include button;
+    text-transform: uppercase;
+    color: $color-white;
+    opacity: 0.75;
+    border: 0;
+
+    &:hover {
+        opacity: 1;
     }
 }
 
