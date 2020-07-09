@@ -18,37 +18,25 @@
         }
     }
 
-    &__trips{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: inherit;
-        height: inherit;
+    &__testimonials {
+        position: relative;
 
-        &--packages{
-            flex-basis: 40%;
-            padding: 2rem 2rem 5rem 2rem;
-            text-align: center; 
-            border-radius: 4px;
-            margin: 0 5rem 5rem 5rem; 
-            background-color: $color-white;
-            box-shadow: 0 1.5rem 3.5rem rgba($color-black, 0.5);
-            transition: all 0.4s;
-
-            &:hover {
-                transform: scale(.97, .97) translateY(1.5rem);
-                box-shadow: 0 2.5rem 5rem rgba($color-black, 0.5);
-                backface-visibility: hidden;
-            }
+        //use a pseudo-element to chage the opacity of the image without affecting the content
+        &::before {
+            content: "";
+            background-image: $linear-gradient-tertiaries-light, url(/assets/img/sea-carousel-medium.jpg);
+            background-position: center;
+            background-repeat: none;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: .5;
+            filter: blur(.5rem);
         }
     }
-
-    // &__testimonials {
-    //     display: flex;
-    //     &--carousel {
-    //         justify-content: center;
-    //     }
-    // }
 
     &__popup {
         background-image: $linear-gradient-tertiaries;
@@ -64,10 +52,7 @@
 
         &:target {
             visibility: visible;
-            opacity: 1;
-        }
+            opacity: 1; 
+        }  
     }
 }
-
-
-

@@ -28,11 +28,18 @@
     @include headingQuaternary;
     bottom: 0;
     overflow-wrap: break-word;
+    width: 72%;
 }
 
 .heading-quaternary-2 {
     @include headingQuaternary;
     top: 0;
+}
+
+.heading-quaternary-3 {
+    @include headingQuaternary;
+    bottom: 0;
+    width: 50%;
 }
 
 .paragraph {
@@ -42,6 +49,20 @@
     line-height: 3rem;
 }
 
+.logo {
+    &__header {
+        height: 100%;
+        margin-left: 4rem;
+        margin-top: 5.5rem;
+    }
+
+    &__footer {
+        height: 10rem;
+        margin-top: 5rem
+    }
+    
+}
+
 .icons {
     font-size: 3.5rem;
     background-image: linear-gradient($color-primary-1, $color-primary-2);
@@ -49,6 +70,10 @@
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-stroke: 1px $color-secondary-1;
+
+    &__footer {
+        margin-bottom: 2rem;
+    }
 
     &-card {
         position: absolute;

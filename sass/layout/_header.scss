@@ -9,12 +9,6 @@
         height: 7rem;
     }
 
-    &__logo {
-        height: 100%;
-        margin-left: 4rem;
-        margin-top: 5.5rem;
-    }
-
     &__title-box {
         @include centerAbsolute;
         color: $color-white; 

@@ -27,3 +27,8 @@ a {
 ul {
     list-style-type: none;
 }
+
+//change the default background color of the text selected
+::selection {
+    background: $color-primary-1;
+}

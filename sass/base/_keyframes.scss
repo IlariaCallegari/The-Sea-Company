@@ -1,3 +1,4 @@
+//TITLE ANIMATION
 @keyframes appear {
     0% {
         transform: translate(-10%, -10%); 
@@ -7,6 +8,7 @@
     }
 }
 
+//SLIDE ANIMATION
 @keyframes slides {
     0% {
         opacity: 0;
