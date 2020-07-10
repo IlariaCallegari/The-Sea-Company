@@ -17,7 +17,7 @@
         //use a pseudo-element to chage the opacity of the image without affecting the content
         &::before {
             content: "";
-            background-image: url(../assets/img/testimonials-0-medium.jpg);
+            background-image: url(img/testimonials-0-medium.jpg);
             background-position: center;
             background-repeat: none;
             background-size: cover;
