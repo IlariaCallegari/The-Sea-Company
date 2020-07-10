@@ -17,7 +17,7 @@
         //use a pseudo-element to chage the opacity of the image without affecting the content
         &::before {
             content: "";
-            background-image: $linear-gradient-tertiaries-light, url(/assets/img/sea-carousel-medium.jpg);
+            background-image: url(/assets/img/testimonials-0-medium.jpg);
             background-position: center;
             background-repeat: none;
             background-size: cover;
@@ -26,8 +26,8 @@
             left: 0;
             bottom: 0;
             right: 0;
-            opacity: .5;
-            filter: blur(.5rem);
+            opacity: .7;
+            filter: blur(.3rem);
         }
     }
 

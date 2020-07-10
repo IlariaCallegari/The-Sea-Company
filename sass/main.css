@@ -692,19 +692,19 @@ ul {
 }
 
 .packages__card--title-1 {
-  background-image: url(/assets/img/polynesia.jpg);
+  background-image: url(/assets/img/destination-polynesia-small-640px.jpg);
 }
 
 .packages__card--title-2 {
-  background-image: url(/assets/img/patagonia.jpg);
+  background-image: url(/assets/img/destination-patagonia-small-640px.jpg);
 }
 
 .packages__card--title-3 {
-  background-image: url(/assets/img/caribbean.jpg);
+  background-image: url(/assets/img/destination-carribean-small-640px.jpg);
 }
 
 .packages__card--title-4 {
-  background-image: url(/assets/img/madagascar.jpg);
+  background-image: url(/assets/img/destination-madagascar-small-640px.jpg);
 }
 
 .packages__card--details {
@@ -781,7 +781,7 @@ ul {
   width: 50rem;
   height: 50rem;
   display: none;
-  background-color: rgba(193, 209, 220, 0.8);
+  background-color: rgba(193, 209, 220, 0.7);
   -webkit-box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
           box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
   border-radius: 50%;
@@ -968,8 +968,8 @@ ul {
 
 .header {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(66, 134, 244, 0.8)), to(rgba(55, 59, 68, 0.8))), url(/assets/img/sea-main.jpg);
-  background-image: linear-gradient(to bottom right, rgba(66, 134, 244, 0.8), rgba(55, 59, 68, 0.8)), url(/assets/img/sea-main.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(66, 134, 244, 0.8)), to(rgba(55, 59, 68, 0.8))), url(/assets/img/sailing-0-medium-1920.jpg);
+  background-image: linear-gradient(to bottom right, rgba(66, 134, 244, 0.8), rgba(55, 59, 68, 0.8)), url(/assets/img/sailing-0-medium-1920.jpg);
   background-position: top;
   background-size: cover;
   position: relative;
@@ -1185,8 +1185,7 @@ ul {
 
 .section__testimonials::before {
   content: "";
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(66, 134, 244, 0.8)), to(rgba(55, 59, 68, 0.3))), url(/assets/img/sea-carousel-medium.jpg);
-  background-image: linear-gradient(to bottom right, rgba(66, 134, 244, 0.8), rgba(55, 59, 68, 0.3)), url(/assets/img/sea-carousel-medium.jpg);
+  background-image: url(/assets/img/testimonials-0-medium.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -1195,9 +1194,9 @@ ul {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: .5;
-  -webkit-filter: blur(0.5rem);
-          filter: blur(0.5rem);
+  opacity: .7;
+  -webkit-filter: blur(0.3rem);
+          filter: blur(0.3rem);
 }
 
 .section__popup {
