@@ -343,7 +343,7 @@ ul {
   .popup__inner--picture {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(/assets/img/sea_3.jpg);
+    background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(./assets/img/sailing-3-small-640px.jpg);
     background-position: center;
     background-size: 100%;
     position: relative; }
@@ -440,13 +440,13 @@ ul {
     background-repeat: no-repeat;
     border-radius: 1rem; }
   .packages__card--title-1 {
-    background-image: url(/assets/img/destination-polynesia-small-640px.jpg); }
+    background-image: url(../assets/img/destination-polynesia-small-640px.jpg); }
   .packages__card--title-2 {
-    background-image: url(/assets/img/destination-patagonia-small-640px.jpg); }
+    background-image: url(../assets/img/destination-patagonia-small-640px.jpg); }
   .packages__card--title-3 {
-    background-image: url(/assets/img/destination-carribean-small-640px.jpg); }
+    background-image: url(../assets/img/destination-carribean-small-640px.jpg); }
   .packages__card--title-4 {
-    background-image: url(/assets/img/destination-madagascar-small-640px.jpg); }
+    background-image: url(../assets/img/destination-madagascar-small-640px.jpg); }
 
 .packages__card--details {
   display: flex;
@@ -476,7 +476,7 @@ ul {
   .popup__inner--picture {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(/assets/img/sea_3.jpg);
+    background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(./assets/img/sailing-3-small-640px.jpg);
     background-position: center;
     background-size: 100%;
     position: relative; }
@@ -631,7 +631,7 @@ ul {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to bottom right, rgba(66, 134, 244, 0.8), rgba(55, 59, 68, 0.8)), url(/assets/img/sailing-0-medium-1920.jpg);
+  background-image: linear-gradient(to bottom right, rgba(66, 134, 244, 0.8), rgba(55, 59, 68, 0.8)), url(../assets/img/sailing-0-medium-1920.jpg);
   background-position: top;
   background-size: cover;
   position: relative; }
@@ -788,7 +788,7 @@ ul {
     position: relative; }
     .section__testimonials::before {
       content: "";
-      background-image: url(/assets/img/testimonials-0-medium.jpg);
+      background-image: url(../assets/img/testimonials-0-medium.jpg);
       background-position: center;
       background-repeat: none;
       background-size: cover;
