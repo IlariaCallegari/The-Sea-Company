@@ -9,13 +9,6 @@
     &__about-us {
         width: inherit;
         height: inherit;
-
-        &--description-text {
-            & .paragraph {
-                line-height: 3rem;
-                margin-bottom: 5rem;
-            }
-        }
     }
 
     &__testimonials {

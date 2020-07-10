@@ -12,6 +12,14 @@
         box-shadow: 0 1.5rem 3.5rem rgba($color-black, 0.5);
         transition: all 0.4s;
         margin-bottom: 5rem;
+        
+        @include responsive(tab-port){
+            flex-basis: 70%;
+            margin: 0 auto;
+        }
+        @include responsive(phone){
+            flex-basis: 85%;
+        }
 
         &:hover {
             transform: scale(.97, .97) translateY(1.5rem);

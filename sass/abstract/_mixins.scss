@@ -41,7 +41,53 @@
     text-align: right;
     padding: 1.5rem 2rem;
     background-color: rgba($color-primary-1, 0.9);
+
+    @include responsive(tab-port){
+        font-size: 2.5rem;
+        letter-spacing: .2rem;
+    }
+    @include responsive(phoone){
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
 }
 
-//MEDIA QUERIES MIXINS
+/*MEDIA QUERIES MANAGER
+BREAKPOINTS                                     ARGUMENTS   
+phone               0-500px                     phone
+tab portrait        500-800px                   tab-port
+tab landscape       800-1200px                  tab-land
+normal style        1200px - 1500px
+large screen        1500px -->                  big-dskt
+
+1em = 16px
+
+ORDER: base + typography > general layout > page layout > components
+*/
+
+@mixin responsive ($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and(max-width: 31.25em){
+            @content
+        };
+    };
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 50em){
+            @content
+        };
+    };
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em){
+            @content
+        };
+    };
+
+    @if $breakpoint == big-dskt {
+        @media only screen and (min-width: 93.75em){
+            @content
+        };
+    };
+}
 

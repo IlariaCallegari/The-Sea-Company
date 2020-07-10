@@ -1,0 +1,45 @@
+//TITLE ANIMATION
+@keyframes title-appear {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0.3
+    }
+
+    80% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+//ARROW ANIMATION {
+@keyframes arrow-appear {
+    0% {
+        opacity: 0
+    }
+    
+    70% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+    }
+}   
+
+//SLIDE ANIMATION
+@keyframes slides {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

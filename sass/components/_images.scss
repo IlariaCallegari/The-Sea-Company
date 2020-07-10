@@ -1,38 +1,45 @@
-.section__about-us--images {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    & img {
-        height: 35rem;
-        background-position: center;
-        background-size: 100%;
-        background-clip: content-box;
-        padding: 2rem;
-        box-shadow: 1rem 1rem 4rem rgba($color-black, 0.2);
-        margin: 0 2rem 4rem 0;
-        border-radius: 4px;
+.about-us{
+    &__text {
+        line-height: 3rem;
+        margin-bottom: 5rem;
     }
 
-    &-small {
-        flex-basis: 38%;
-        transition: all .4s;
+    &__composition {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &--image{
+            height: 25rem;
+            background-position: center;
+            background-size: 100%;
+            background-clip: content-box;
+            padding: 1rem;
+            box-shadow: 1rem 1rem 4rem rgba($color-black, 0.2);
+            margin: 0 2rem 2rem 0;
+            border-radius: 1rem;
         
-        &:hover {
-            @include imageOnFocus;
+            &-small {
+                flex-grow: 1;
+                transition: all .4s;
+                
+                &:hover {
+                    @include imageOnFocus;
+                }
+            }
+        
+            &-big {
+                flex-grow: 20;
+                transition: all .4s;
+            
+                &:hover {
+                    @include imageOnFocus;
+                }
+            }
         }
     }
-
-    &-big {
-        flex-basis: 58%;
-        transition: all .4s;
-    
-        &:hover {
-            @include imageOnFocus;
-        }
-    }
-} 
+}
 
 
 
