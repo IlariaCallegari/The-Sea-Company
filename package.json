@@ -4,24 +4,28 @@
   "description": "Fully responsive landing page for startup company, created with Sass, Flexbox and CSS Animations.",
   "main": "index.html",
   "scripts": {
+    "compile:sass": "node-sass sass/main.scss assets/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/style.comp.css -o assets/style.css"
   },
-  "liveSassCompile.settings.formats":[
+  "liveSassCompile.settings.formats": [
     {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "/css"
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
     }
   ],
-  "liveSassCompile.settings.generateMap": false,  
+  "liveSassCompile.settings.generateMap": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IlariaCallegari/The-Sailing-Company.git"
   },
   "keywords": [
     "startup",
-    "landing page", 
+    "landing page",
     "SASS",
-    "front-end"
+    "front-end",
+    "BEM architecture",
+    "flexbox"
   ],
   "author": "Ilaria Callegari",
   "license": "ISC",
@@ -31,6 +35,8 @@
   "homepage": "https://github.com/IlariaCallegari/The-Sailing-Company#readme",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "autoprefixer": "^9.8.4",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1"
   }
 }
