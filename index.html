@@ -44,7 +44,14 @@
     <!-- HEADER -->
     <header class="header">
         <div class="header__logo-box">
-            <img class="logo logo__header" src="/assets/img/Logo-no-name-1.5x-2250px.png" alt="The Sea Company Logo">
+            <!-- RESOLUTION SWITICHING -->
+            <img srcset=
+            "/assets/img/Logo-no-name-0.5x-700px.png 750w, 
+            /assets/img/Logo-no-name-1x-1500px.png 1500w" 
+            alt="The Sea Company Logo" 
+            src="/assets/img/Logo-no-name-1x-1500px.png" 
+            sizes="(max-width: 31.25em) 750px, 1500px"
+            class="logo logo__header">
         </div>
 
         <div class="header__title-box">
@@ -56,7 +63,6 @@
             </div>
         </div>
         <div class="header__arrow">&nbsp;</div>
-
     </header>
 
     <!-- ABOUT US -->
@@ -73,14 +79,30 @@
         </div>
 
         <div class="about-us__composition">
-            <img src="assets/img/sailing-1-medium.jpg" class="about-us__composition--image about-us__composition--image-small">
+            <img 
+            srcset="/assets/img/sailing-1-medium-1920px.jpg 1920w,
+            /assets/img/sailing-1-small-640px.jpg 640w"
+            sizes="(max-width: 50em) 640px, 1920px"
+            src="assets/img/sailing-1-medium.jpg" class="about-us__composition--image about-us__composition--image-small">
 
-            <img src="assets/img/sailing-2-medium-1920.jpg" class="about-us__composition--image about-us__composition--image-big">
+            <img 
+            srcset= "/assets/img/sailing-2-medium-1920px.jpg 1920w,
+            /assets/img/sailing-2-small-640px.jpg 640w"
+            sizes="(max-width: 50em) 640px, 1920px"
+            src="assets/img/sailing-2-medium-1920.jpg" class="about-us__composition--image about-us__composition--image-big">
 
-            <img src="assets/img/sailing-3-medium-1920.jpg" class="about-us__composition--image 
+            <img 
+            srcset= "/assets/img/sailing-3-medium-1920px.jpg 1920w,
+            /assets/img/sailing-3-small-640px.jpg 640w"
+            sizes="(max-width: 50em) 640px, 1920px"
+            src="assets/img/sailing-3-medium-1920.jpg" class="about-us__composition--image 
             about-us__composition--image-big">
 
-            <img src="assets/img/sailing-4-medium-1920.jpg" class="about-us__composition--image about-us__composition--image-small">
+            <img
+            srcset= "/assets/img/sailing-4-medium-1920px.jpg 1920w,
+            /assets/img/sailing-4-small-640px.jpg 640w"
+            sizes="(max-width: 50em) 640px, 1920px"
+            src="assets/img/sailing-4-medium-1920.jpg" class="about-us__composition--image about-us__composition--image-small">
         </div>
     </section>
 

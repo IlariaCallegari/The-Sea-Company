@@ -18,6 +18,11 @@
             height: 47rem;
         }
 
+        @include responsive(phone){
+            width: 40rem;
+            height: 40rem;
+        }
+
         &--picture {
             & figure {
                 position: relative;
@@ -32,6 +37,10 @@
                     @include responsive(tab-port){
                         height: 12rem;
                         width: 12rem;
+                    }
+                    @include responsive(phone){
+                        height: 10rem;
+                        width: 10rem;
                     }
                 }
 

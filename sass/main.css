@@ -795,6 +795,13 @@ ul {
   }
 }
 
+@media only screen and (max-width: 31.25em) {
+  .carousel__slide {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
 .carousel__slide--picture figure {
   position: relative;
 }
@@ -813,6 +820,13 @@ ul {
   .carousel__slide--picture figure img {
     height: 12rem;
     width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .carousel__slide--picture figure img {
+    height: 10rem;
+    width: 10rem;
   }
 }
 
