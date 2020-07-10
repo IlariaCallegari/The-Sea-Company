@@ -9,6 +9,10 @@
     position: relative;
     overflow: hidden;
 
+    @include responsive(phone){
+        width: 100%;
+    }
+
     &--labels {
         font-size: 1.5rem;
         display: block;
@@ -32,6 +36,10 @@
         &:focus {
             border-bottom: .1rem solid $color-primary-2;
         }
+    }
+
+    &--button {
+        text-align: center;
     }
 }
 

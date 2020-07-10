@@ -10,6 +10,11 @@
         flex-wrap: wrap;
         justify-content: center;
 
+        @include responsive(tab-port){
+            margin: 0 auto;
+            width: 80%;
+        }
+
         &--image{
             height: 25rem;
             background-position: center;
@@ -19,6 +24,11 @@
             box-shadow: 1rem 1rem 4rem rgba($color-black, 0.2);
             margin: 0 2rem 2rem 0;
             border-radius: 1rem;
+
+            @include responsive(tab-port){
+               height: 35rem;
+               margin: 0;
+            }
         
             &-small {
                 flex-grow: 1;

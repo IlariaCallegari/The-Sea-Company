@@ -193,7 +193,7 @@ ul {
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 5rem;
-  text-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   font-weight: 700;
 }
 
@@ -286,14 +286,34 @@ ul {
   line-height: 3rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .paragraph {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+}
+
 .logo__header {
   height: 100%;
   margin-left: 4rem;
   margin-top: 5.5rem;
 }
 
+@media only screen and (max-width: 50em) {
+  .logo__header {
+    margin-left: 3.5rem;
+    margin-top: 3.5rem;
+  }
+}
+
 .logo__footer {
   height: 20rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .logo__footer {
+    height: 15rem;
+  }
 }
 
 .icons {
@@ -373,7 +393,6 @@ ul {
 }
 
 .btn {
-  display: inline-block;
   border-radius: 50rem;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
@@ -434,7 +453,7 @@ ul {
   border: 0;
   margin-top: 5rem;
   outline: none;
-  background-image: linear-gradient(120deg, #2b5876, #c1d1dc);
+  background-color: #c1d1dc;
 }
 
 .btn-contact:hover {
@@ -453,6 +472,12 @@ ul {
   text-align: left;
   position: relative;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .contact__form {
+    width: 100%;
+  }
 }
 
 .contact__form--labels {
@@ -479,6 +504,10 @@ ul {
 
 .contact__form--inputs:focus {
   border-bottom: 0.1rem solid #2b5876;
+}
+
+.contact__form--button {
+  text-align: center;
 }
 
 .popup__inner {
@@ -540,6 +569,13 @@ ul {
           justify-content: center;
 }
 
+@media only screen and (max-width: 50em) {
+  .about-us__composition {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
 .about-us__composition--image {
   height: 25rem;
   background-position: center;
@@ -550,6 +586,13 @@ ul {
           box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.2);
   margin: 0 2rem 2rem 0;
   border-radius: 1rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .about-us__composition--image {
+    height: 35rem;
+    margin: 0;
+  }
 }
 
 .about-us__composition--image-small {
@@ -619,8 +662,8 @@ ul {
 
 @media only screen and (max-width: 31.25em) {
   .trips__packages {
-    -ms-flex-preferred-size: 85%;
-        flex-basis: 85%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -745,6 +788,13 @@ ul {
   padding: 3rem;
 }
 
+@media only screen and (max-width: 50em) {
+  .carousel__slide {
+    width: 47rem;
+    height: 47rem;
+  }
+}
+
 .carousel__slide--picture figure {
   position: relative;
 }
@@ -757,6 +807,13 @@ ul {
           box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
+}
+
+@media only screen and (max-width: 50em) {
+  .carousel__slide--picture figure img {
+    height: 12rem;
+    width: 12rem;
+  }
 }
 
 .carousel__slide--picture figure figcaption {
@@ -772,6 +829,12 @@ ul {
   opacity: 0;
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
+}
+
+@media only screen and (max-width: 50em) {
+  .carousel__slide--picture figure figcaption {
+    font-size: 2rem;
+  }
 }
 
 .carousel__slide--picture figure figcaption span {
@@ -799,7 +862,7 @@ ul {
   opacity: 1;
 }
 
-.carousel__indicators .carousel__indicator {
+.carousel__indicator {
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
@@ -811,7 +874,7 @@ ul {
   background-color: #373B44;
 }
 
-.carousel__indicators .carousel__indicator:hover {
+.carousel__indicator:hover {
   opacity: 1;
 }
 
@@ -890,6 +953,14 @@ ul {
           align-items: center;
 }
 
+@media only screen and (max-width: 50em) {
+  .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .footer__pararaph {
   padding-top: 5rem;
   margin-bottom: 2rem;
@@ -957,6 +1028,13 @@ ul {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 50em) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
 .navigation__icon {
   margin-top: 3.5rem;
   position: relative;
@@ -994,6 +1072,13 @@ ul {
   z-index: 5;
   -webkit-transition: all .4s ease-in;
   transition: all .4s ease-in;
+}
+
+@media only screen and (max-width: 50em) {
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
 }
 
 .navigation__nav {
