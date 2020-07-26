@@ -602,7 +602,7 @@ ul {
 @media only screen and (max-width: 50em) {
   .about-us__composition--image {
     height: 35rem;
-    margin: 0;
+    margin: 1.5rem auto;
   }
 }
 
