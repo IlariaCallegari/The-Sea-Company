@@ -46,24 +46,36 @@ ORDER: base + typography > general layout > page layout > components
 @-webkit-keyframes arrow-appear {
   0% {
     opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-100%, -50%);
+            transform: rotate(45deg) translate(-100%, -50%);
   }
   70% {
     opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-100%, -50%) scale(1.25);
+            transform: rotate(45deg) translate(-100%, -50%) scale(1.25);
   }
   100% {
     opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-100%, -50%);
+            transform: rotate(45deg) translate(-100%, -50%);
   }
 }
 
 @keyframes arrow-appear {
   0% {
     opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-100%, -50%);
+            transform: rotate(45deg) translate(-100%, -50%);
   }
   70% {
     opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-100%, -50%) scale(1.25);
+            transform: rotate(45deg) translate(-100%, -50%) scale(1.25);
   }
   100% {
     opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-100%, -50%);
+            transform: rotate(45deg) translate(-100%, -50%);
   }
 }
 
@@ -441,7 +453,6 @@ ul {
   padding: 1rem 3rem;
   background-color: #2b5876;
   text-transform: uppercase;
-  margin-top: 5rem;
 }
 
 .btn-contact {
@@ -526,7 +537,7 @@ ul {
 .popup__inner--picture {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(/assets/img/sea_3.jpg);
+  background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(../assets/img/sailing-3-small-640px.jpg);
   background-position: center;
   background-size: 100%;
   position: relative;
@@ -692,19 +703,19 @@ ul {
 }
 
 .packages__card--title-1 {
-  background-image: url(/assets/img/destination-polynesia-small-640px.jpg);
+  background-image: url(../assets/img/destination-polynesia-small-640px.jpg);
 }
 
 .packages__card--title-2 {
-  background-image: url(/assets/img/destination-patagonia-small-640px.jpg);
+  background-image: url(../assets/img/destination-patagonia-small-640px.jpg);
 }
 
 .packages__card--title-3 {
-  background-image: url(/assets/img/destination-carribean-small-640px.jpg);
+  background-image: url(../assets/img/destination-carribean-small-640px.jpg);
 }
 
 .packages__card--title-4 {
-  background-image: url(/assets/img/destination-madagascar-small-640px.jpg);
+  background-image: url(../assets/img/destination-madagascar-small-640px.jpg);
 }
 
 .packages__card--details {
@@ -746,7 +757,7 @@ ul {
 .popup__inner--picture {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(/assets/img/sea_3.jpg);
+  background-image: linear-gradient(95deg, #eee 0%, #eee 50%, transparent 50%), url(../assets/img/sailing-3-small-640px.jpg);
   background-position: center;
   background-size: 100%;
   position: relative;
@@ -982,8 +993,8 @@ ul {
 
 .header {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(66, 134, 244, 0.8)), to(rgba(55, 59, 68, 0.8))), url(/assets/img/sailing-0-medium-1920.jpg);
-  background-image: linear-gradient(to bottom right, rgba(66, 134, 244, 0.8), rgba(55, 59, 68, 0.8)), url(/assets/img/sailing-0-medium-1920.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(66, 134, 244, 0.8)), to(rgba(55, 59, 68, 0.8))), url(../assets/img/sailing-0-medium-1920.jpg);
+  background-image: linear-gradient(to bottom right, rgba(66, 134, 244, 0.8), rgba(55, 59, 68, 0.8)), url(../assets/img/sailing-0-medium-1920.jpg);
   background-position: top;
   background-size: cover;
   position: relative;
@@ -1199,7 +1210,7 @@ ul {
 
 .section__testimonials::before {
   content: "";
-  background-image: url(/assets/img/testimonials-0-medium.jpg);
+  background-image: url(img/testimonials-0-medium.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
