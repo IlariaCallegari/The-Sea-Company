@@ -248,6 +248,13 @@ ul {
   }
 }
 
+@media only screen and (max-width: 31.25em) {
+  .heading-quaternary {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+}
+
 .heading-quaternary-2 {
   font-size: 3rem;
   color: #eee;
@@ -266,6 +273,13 @@ ul {
   .heading-quaternary-2 {
     font-size: 2.5rem;
     letter-spacing: .2rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .heading-quaternary-2 {
+    font-size: 2rem;
+    letter-spacing: 0;
   }
 }
 
@@ -291,6 +305,19 @@ ul {
   }
 }
 
+@media only screen and (max-width: 31.25em) {
+  .heading-quaternary-3 {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .heading-quaternary-3 {
+    width: 100%;
+  }
+}
+
 .paragraph {
   font-size: 1.5rem;
   padding: 1.5rem 2rem 1.5rem;
@@ -300,7 +327,6 @@ ul {
 
 @media only screen and (max-width: 31.25em) {
   .paragraph {
-    font-size: 1.3rem;
     line-height: 2.5rem;
   }
 }
@@ -453,6 +479,8 @@ ul {
   padding: 1rem 3rem;
   background-color: #2b5876;
   text-transform: uppercase;
+  margin-top: 4rem;
+  display: block;
 }
 
 .btn-contact {
@@ -534,6 +562,13 @@ ul {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 50em) {
+  .popup__inner {
+    height: 70%;
+    width: 70%;
+  }
+}
+
 .popup__inner--picture {
   width: 100%;
   height: 100%;
@@ -543,11 +578,11 @@ ul {
   position: relative;
 }
 
-.popup__inner--text {
-  width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 1%;
+@media only screen and (max-width: 31.25em) {
+  .popup__inner--picture {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), color-stop(50%, #eee), color-stop(50%, transparent)), url(../assets/img/sailing-3-small-640px.jpg);
+    background-image: linear-gradient(180deg, #eee 0%, #eee 50%, transparent 50%), url(../assets/img/sailing-3-small-640px.jpg);
+  }
 }
 
 .popup__inner--info {
@@ -555,6 +590,22 @@ ul {
   top: 30%;
   left: 6%;
   position: relative;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .popup__inner--info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .popup__inner--info-terms {
@@ -754,6 +805,13 @@ ul {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 50em) {
+  .popup__inner {
+    height: 70%;
+    width: 70%;
+  }
+}
+
 .popup__inner--picture {
   width: 100%;
   height: 100%;
@@ -763,11 +821,11 @@ ul {
   position: relative;
 }
 
-.popup__inner--text {
-  width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 1%;
+@media only screen and (max-width: 31.25em) {
+  .popup__inner--picture {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), color-stop(50%, #eee), color-stop(50%, transparent)), url(../assets/img/sailing-3-small-640px.jpg);
+    background-image: linear-gradient(180deg, #eee 0%, #eee 50%, transparent 50%), url(../assets/img/sailing-3-small-640px.jpg);
+  }
 }
 
 .popup__inner--info {
@@ -775,6 +833,22 @@ ul {
   top: 30%;
   left: 6%;
   position: relative;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .popup__inner--info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .popup__inner--info-terms {
@@ -1210,7 +1284,7 @@ ul {
 
 .section__testimonials::before {
   content: "";
-  background-image: url(img/testimonials-0-medium.jpg);
+  background-image: url(../assets/img/testimonials-0-medium.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;

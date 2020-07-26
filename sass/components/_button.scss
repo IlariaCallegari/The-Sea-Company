@@ -35,6 +35,8 @@
     &:visited {
         @include button;
         text-transform: uppercase;
+        margin-top: 4rem; 
+        display: block;
     }
 }
 
