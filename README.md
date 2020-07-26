@@ -5,5 +5,5 @@ This landing page is easy to mantain and easily scalable, thanks to BEM architec
 
 ## Technologies
 * HTML5
-* SASS - CSS preprocessor
+* SASS
 * Flexbox
