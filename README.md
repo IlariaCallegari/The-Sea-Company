@@ -9,4 +9,4 @@ This landing page is easy to mantain and easily scalable, thanks to BEM architec
 * Flexbox
 
 ### Deployment
-The landing page is visible on GitHub Pages
+The landing page is visible at this  link: https://ilariacallegari.github.io/The-Sea-Company/
