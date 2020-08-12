@@ -7,3 +7,6 @@ This landing page is easy to mantain and easily scalable, thanks to BEM architec
 * HTML5
 * SASS
 * Flexbox
+
+### Deployment
+The landing page is visible on GitHub Pages
